@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" mce_bogus="1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/material_deep_teal_500</item>
+        <item name="colorPrimaryDark">@color/material_deep_teal_500</item>
+        <item name="colorAccent">@color/material_deep_teal_200</item>
+
+        <item name="android:windowAnimationStyle">@style/dc_animator</item>
+
+        <item name="android:activityOpenEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
+        <item name="android:activityOpenExitAnimation">@animator/on_in_hold</item>
+        <item name="android:activityCloseEnterAnimation">@animator/drown</item>
+        <item name="android:activityCloseExitAnimation">@animator/on_out_hold</item>
+    </style>
+
+    <style name="dc_animator" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
+        <item name="android:activityOpenExitAnimation">@animator/on_in_hold</item>
+        <item name="android:activityCloseEnterAnimation">@animator/drown</item>
+        <item name="android:activityCloseExitAnimation">@animator/on_out_hold</item>
+    </style>
+
+</resources>
